@@ -3,74 +3,170 @@
     <head>
         <meta charset="utf-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
-        <meta name="description" content="" />
-        <meta name="author" content="" />
+        <meta name="description" content="Stefano De Giorgis — Digital Humanist, researcher in Knowledge Representation, Semantic Web and AI." />
+        <meta name="author" content="Stefano De Giorgis" />
         <title>Stefano De Giorgis</title>
         <link rel="icon" type="image/x-icon" href="assets/favicon.ico" />
-        <!-- Google fonts-->
-        <link href="https://fonts.googleapis.com/css?family=Raleway:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i" rel="stylesheet" />
-        <link href="https://fonts.googleapis.com/css?family=Lora:400,400i,700,700i" rel="stylesheet" />
-        <!-- Core theme CSS (includes Bootstrap)-->
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link href="https://fonts.googleapis.com/css2?family=Inter:ital,wght@0,400;0,500;0,600;0,700;1,400&family=Source+Serif+4:ital@0;1&display=swap" rel="stylesheet" />
         <link href="css/styles.css" rel="stylesheet" />
     </head>
     <body>
-        <header>
-            <h1 class="site-heading text-center text-faded d-none d-lg-block">
-              <!-- span class="site-heading-upper text-primary mb-3">A Free Bootstrap Business Theme</span -->
-              <span class="site-heading-lower">Stefano De Giorgis</span>
-            </h1>
+        <header class="site-header">
+            <div class="wrap header-inner">
+                <a class="logo" href="#top">Stefano De Giorgis</a>
+                <button class="nav-toggle" type="button" aria-controls="primary-nav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span></span>
+                </button>
+                <nav class="primary-nav" id="primary-nav">
+                    <a href="#work">Work</a>
+                    <a href="#about">About</a>
+                    <a href="CV_giugno_2024.pdf" target="_blank" rel="noopener">CV</a>
+                    <a href="#contact">Contact</a>
+                </nav>
+            </div>
         </header>
-        <!-- Navigation-->
-        <nav class="navbar navbar-expand-lg navbar-dark py-lg-4" id="mainNav">
-            <div class="container">
-                <a class="navbar-brand text-uppercase fw-bold d-lg-none" href="index.html">Stefano De Giorgis</a>
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
-                <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                    <ul class="navbar-nav mx-auto">
-                        <li class="nav-item px-lg-4"><a class="nav-link text-uppercase" href="index.html">Home</a></li>
-                        <li class="nav-item px-lg-4"><a class="nav-link text-uppercase" href="about.html">About</a></li>
-                        <li class="nav-item px-lg-4"><a class="nav-link text-uppercase" href="research.html">Research</a></li>
-                        <li class="nav-item px-lg-4"><a class="nav-link text-uppercase" href="personal.html">Personal</a></li>
+
+        <main id="top">
+            <section class="hero wrap">
+                <p class="eyebrow">Digital Humanist</p>
+                <h1>I model how people make sense of values, emotions, and meaning &mdash; and teach machines to represent it.</h1>
+                <p class="hero-sub">Post&#8209;doctoral researcher at the University of Bologna, working in Knowledge Representation, the Semantic Web, and AI. I build ontologies that formalize commonsense knowledge: moral and cultural values, emotions, social norms, and embodied cognition.</p>
+                <p class="hero-location">Bologna, Italy</p>
+            </section>
+
+            <section class="section" id="work">
+                <div class="wrap">
+                    <h2 class="section-title">Work</h2>
+                    <div class="project-list">
+                        <article class="project">
+                            <div class="project-media"><img src="assets/img/ValueNet_import_schema_borders.png" alt="Values Ontology import schema" loading="lazy" /></div>
+                            <div class="project-body">
+                                <h3>Values Ontology</h3>
+                                <p class="project-tag">Moral &amp; cultural values &mdash; modular ontology</p>
+                                <p>A modular ontology of moral and cultural values, integrating Schwartz's Basic Human Values, Graham and Haidt's Moral Foundations Theory, and Curry's Moral Molecules. Each value is modeled as a conceptual frame, aligned to DOLCE, and built with reusable Ontology Design Patterns as part of the Framester knowledge graph.</p>
+                                <a class="project-link" href="https://github.com/StenDoipanni/ValueNet" target="_blank" rel="noopener">View on GitHub &rarr;</a>
+                            </div>
+                        </article>
+
+                        <article class="project">
+                            <div class="project-media"><img src="assets/img/BE_ontology_schema_borders.png" alt="Emotion Frame Ontology schema" loading="lazy" /></div>
+                            <div class="project-body">
+                                <h3>Emotion Frame Ontology (EFO)</h3>
+                                <p class="project-tag">Emotions as semantic frames</p>
+                                <p>An OWL, frame-based ontology that treats emotions as semantic frames with roles capturing the different facets of emotional experience. EFO integrates multiple emotion theories as cross-linked modules and supports multimodal datasets, including emotional speech and facial expression.</p>
+                                <a class="project-link" href="https://github.com/StenDoipanni/EFO" target="_blank" rel="noopener">View on GitHub &rarr;</a>
+                            </div>
+                        </article>
+
+                        <article class="project">
+                            <div class="project-media"><img src="assets/img/image_schemas_example_diagram.png" alt="Image schema diagram" loading="lazy" /></div>
+                            <div class="project-body">
+                                <h3>ISAAC</h3>
+                                <p class="project-tag">Image schemas &amp; embodied cognition</p>
+                                <p>The Image Schema Abstraction And Cognition modular ontology formalizes Image Schemas &mdash; dynamic conceptual building blocks arising from recurring sensorimotor interaction with the physical world &mdash; and integrates them with linguistic and factual knowledge.</p>
+                                <a class="project-link" href="https://github.com/StenDoipanni/ISAAC" target="_blank" rel="noopener">View on GitHub &rarr;</a>
+                            </div>
+                        </article>
+
+                        <article class="project">
+                            <div class="project-media"><img src="assets/img/sample_sentence.png" alt="Knowledge graph extracted from a sample sentence" loading="lazy" /></div>
+                            <div class="project-body">
+                                <h3>Ethics in the Flesh</h3>
+                                <p class="project-tag">PhD thesis &mdash; values, emotions &amp; embodied cognition</p>
+                                <p>An explainable detector, built on the FRED tool, that exploits knowledge graph patterns to extract emotions, values, and image schemas from text and infer how they combine. The example above is generated automatically from the sentence <em>&ldquo;The police finally stopped the awful killer.&rdquo;</em></p>
+                                <a class="project-link" href="https://github.com/StenDoipanni/StenDoipanni.github.io/blob/main/sample_sentence.png" target="_blank" rel="noopener">Larger image &rarr;</a>
+                            </div>
+                        </article>
+
+                        <article class="project">
+                            <div class="project-media"><img src="assets/img/dnd_for_site.png" alt="Dungeons and Dragons ontology" loading="lazy" /></div>
+                            <div class="project-body">
+                                <h3>D&amp;D 5e Ontology</h3>
+                                <p class="project-tag">Side project &mdash; knowledge graph for tabletop rules</p>
+                                <p>A knowledge graph formalizing the Dungeons &amp; Dragons 5th edition rule system, built out of genuine nerd necessity: character bonuses, monster stats, and rules, all queryable in one place.</p>
+                                <a class="project-link" href="https://github.com/StenDoipanni/DnD-5e-Ontology" target="_blank" rel="noopener">View on GitHub &rarr;</a>
+                            </div>
+                        </article>
+                    </div>
+                </div>
+            </section>
+
+            <section class="section" id="about">
+                <div class="wrap wrap-narrow">
+                    <h2 class="section-title">About</h2>
+                    <p>Hi, I&rsquo;m Stefano. I&rsquo;m a Digital Humanist and currently a post-doctoral researcher at the University of Bologna. My main research areas are Knowledge Representation, the Semantic Web, and AI &mdash; with a particular focus on emotions, moral and cultural values, commonsense knowledge, social norms, and embodied cognition.</p>
+                    <p>I was born in Turin, Italy, in 1993. An early interest in language and semantic technologies led me to Alma Mater Studiorum in Bologna, where I graduated in Linguistics Sciences with a thesis on <em>Post-truth, populism and knowledge extraction &mdash; A frame semantics approach to Indirect Hate Speech</em>. My PhD thesis in Digital Humanities, <em>Ethics in the Flesh &mdash; Formalizing Moral Values with Frame Semantics and Embodied Cognition</em>, focuses on cognitive semantics and the formalization of moral values through frame semantics and embodied cognition.</p>
+                    <p>I firmly believe in empathy: the cognitive, imaginative ability to put oneself in someone else&rsquo;s shoes. The unknown is just an entity not yet framed in a network of meaningful semantic relationships &mdash; and every conversation, personal or professional, is a chance to practice framing it.</p>
+                    <p><a href="CV_giugno_2024.pdf" target="_blank" rel="noopener">Download my full CV &rarr;</a></p>
+                </div>
+            </section>
+
+            <section class="section" id="experience">
+                <div class="wrap wrap-narrow">
+                    <h2 class="section-title">Experience</h2>
+                    <ul class="line-list">
+                        <li><span class="line-title">Local Organizer &amp; Speaker</span><span class="line-meta">Colloquium Shifting Tides &mdash; Norms, Ethics, and Values in an Evolving World of AI and Society, 2023</span></li>
+                        <li><span class="line-title">Chair</span><span class="line-meta">CAOS &mdash; Cognition and Ontologies, 2023</span></li>
+                        <li><span class="line-title">Program Committee Member</span><span class="line-meta">ExICE &mdash; Extended Intelligence for Cultural Engagement, 2023</span></li>
+                        <li><span class="line-title">Head Assistant Tutor</span><span class="line-meta">ISWS &mdash; International Semantic Web Summer School, 2023</span></li>
+                        <li><span class="line-title">Assistant Tutor</span><span class="line-meta">ISWS &mdash; International Semantic Web Summer School, 2022</span></li>
+                        <li><span class="line-title">Program Committee Member</span><span class="line-meta">JOWO &mdash; Joint Ontology Workshops, 2022</span></li>
                     </ul>
                 </div>
-            </div>
-        </nav>
-        <section class="page-section clearfix">
-            <div class="container">
-                <div class="intro">
-                    <img class="intro-img img-fluid mb-3 mb-lg-0 rounded" src="assets/img/me_yoga.jpg" alt="..." />
-                    <div class="intro-text left-0 text-center bg-faded p-5 rounded">
-                        <h2 class="section-heading mb-4">
-                            <span class="section-heading-upper">In a nutshell</span>
-                            <!-- span class="section-heading-lower">Worth Drinking</span -->
-                        </h2>
-                        <p class="mb-3">Hi, my name is Stefano. I'm a Digital Humanist and currently a post doctoral researcher at University of Bologna. My main research areas are Knowledge Representation, Semantic Web, and AI. Some of the topics I get excited about and I've been working on are emotions, moral and cultural values, commonsense knowledge, social norms and embodied cognition.</p>
-                        <div class="intro-button mx-auto"><a class="btn btn-primary btn-xl" href="mailto:stefano.de.giorgis@gmail.com">Contact me</a></div>
-                    </div>
+            </section>
+
+            <section class="section" id="publications">
+                <div class="wrap wrap-narrow">
+                    <h2 class="section-title">Selected publications</h2>
+                    <ul class="line-list">
+                        <li><span class="line-title">ImageSchemaNet: Formalizing embodied commonsense knowledge providing an image&#8209;schematic layer to Framester</span><span class="line-meta">De Giorgis S., Gangemi A., Gromann D. &mdash; Semantic Web Journal, 2023</span></li>
+                        <li><span class="line-title">That&rsquo;s All Folks: a KG of Values as Commonsense Social Norms and Behaviors</span><span class="line-meta">De Giorgis S., Gangemi A. &mdash; arXiv:2303.00632, 2023</span></li>
+                        <li><span class="line-title">The Emotion Frame Ontology</span><span class="line-meta">De Giorgis S., Gangemi A. &mdash; ISWC 2023</span></li>
+                        <li><span class="line-title">Basic Human Values and Moral Foundations Theory in ValueNet Ontology <em>(Best Paper Nomination)</em></span><span class="line-meta">De Giorgis S., Gangemi A., Damiano R. &mdash; EKAW, 2022</span></li>
+                        <li><span class="line-title">Uncovering Values: Detecting Latent Moral Content from Natural Language with Explainable and Non&#8209;Trained Methods</span><span class="line-meta">Asprino L., Bulla L., De Giorgis S., Gangemi A., Marinucci L., Mongiov&igrave; M. &mdash; DeeLIO 2022</span></li>
+                        <li><span class="line-title">Introducing ISAAC: the Image Schema Abstraction And Cognition Modular Ontology</span><span class="line-meta">De Giorgis S., Gangemi A., Gromann D. &mdash; JOWO / CAOS, 2022</span></li>
+                    </ul>
                 </div>
-            </div>
-        </section>
-        <section class="page-section cta">
-            <div class="container">
-                <div class="row">
-                    <div class="col-xl-9 mx-auto">
-                        <div class="cta-inner bg-faded text-center rounded">
-                            <h2 class="section-heading mb-4">
-                                <span class="section-heading-upper">Personal Vision Statement</span>
-                                <!-- span class="section-heading-lower">To You</span -->
-                            </h2>
-                            <p class="mb-0">I firmly believe in empathy. If there is anything that can save the 21st century, it is the human cognitive imaginative ability to <em> put oneself in someone else's shoes</em>. Every day, both personal and working aspects of life, are an opportunity to exercise the listening and understanding abilities. The unknown is just an entity not yet framed in a network of meaningful semantic relationships.</p>
-                        </div>
-                    </div>
+            </section>
+
+            <section class="section" id="toolkit">
+                <div class="wrap wrap-narrow">
+                    <h2 class="section-title">Toolkit</h2>
+                    <p class="section-lede">What I reach for day to day.</p>
+                    <ul class="chip-list">
+                        <li>OWL &amp; RDF</li>
+                        <li>Prot&eacute;g&eacute;</li>
+                        <li>Frame Semantics</li>
+                        <li>FRED</li>
+                        <li>SPARQL</li>
+                        <li>Ontology Design Patterns</li>
+                        <li>Python</li>
+                        <li>Linked Open Data</li>
+                    </ul>
                 </div>
+            </section>
+
+            <section class="section" id="interests">
+                <div class="wrap wrap-narrow">
+                    <h2 class="section-title">Off the clock</h2>
+                    <ul class="line-list">
+                        <li><span class="line-title">Tabletop</span><span class="line-meta">Dungeons &amp; Dragons player and game master &mdash; see the <a href="#work">D&amp;D 5e Ontology</a> above.</span></li>
+                        <li><span class="line-title">Movement</span><span class="line-meta">Yoga, hiking, and generally getting outside the office.</span></li>
+                        <li><span class="line-title">Curiosity</span><span class="line-meta">Anything that reframes how people make sense of the world &mdash; language, games, and the odd cognitive science rabbit hole.</span></li>
+                    </ul>
+                </div>
+            </section>
+        </main>
+
+        <footer class="site-footer" id="contact">
+            <div class="wrap">
+                <p class="footer-cta">Say hello &mdash; <a href="mailto:stefano.de.giorgis@gmail.com">stefano.de.giorgis@gmail.com</a></p>
+                <p class="footer-meta">&copy; Stefano De Giorgis, 2026.</p>
             </div>
-        </section>
-        <footer class="footer text-faded text-center py-5">
-            <div class="container"><p class="m-0 small">Copyright &copy; Stefano De Giorgis 2023. <br> Background image credits to ahasanaraakter.</p></div>
         </footer>
-        <!-- Bootstrap core JS-->
-        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
-        <!-- Core theme JS-->
+
         <script src="js/scripts.js"></script>
     </body>
 </html>
