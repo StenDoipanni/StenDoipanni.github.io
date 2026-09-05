@@ -14,4 +14,18 @@ window.addEventListener('DOMContentLoaded', () => {
       toggle.setAttribute('aria-expanded', 'false');
     });
   });
+
+  const eyebrow = document.getElementById('eyebrow');
+  const titles = ['Digital Humanist', 'Applied Ontologist', 'Knowledge Engineer'];
+  if (eyebrow) {
+    let i = 0;
+    setInterval(() => {
+      i = (i + 1) % titles.length;
+      eyebrow.style.opacity = '0';
+      setTimeout(() => {
+        eyebrow.textContent = titles[i];
+        eyebrow.style.opacity = '1';
+      }, 400);
+    }, 12000);
+  }
 });
