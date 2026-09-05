@@ -255,6 +255,31 @@ p {
   white-space: nowrap;
 }
 
+.project-list-compact {
+  gap: 32px;
+}
+
+.project-list-compact .project {
+  grid-template-columns: 180px 1fr;
+  gap: 24px;
+}
+
+.project-list-compact .project-body h3 {
+  font-size: 1.05rem;
+  margin-bottom: 4px;
+}
+
+.project-list-compact .project-tag {
+  font-size: 0.75rem;
+  margin-bottom: 8px;
+}
+
+.project-list-compact .project-body p:not(.project-tag) {
+  font-size: 0.92rem;
+  line-height: 1.55;
+  margin-bottom: 8px;
+}
+
 /* Line lists (experience / publications / interests) */
 
 .line-list li {
@@ -282,6 +307,30 @@ p {
   font-size: 0.82rem;
   flex: 1 1 260px;
   text-align: right;
+}
+
+/* News */
+
+.news-list li {
+  padding: 20px 0;
+  border-top: 1px solid var(--line);
+}
+
+.news-list li:first-child {
+  border-top: none;
+  padding-top: 0;
+}
+
+.news-list li p {
+  margin: 0;
+}
+
+.news-date {
+  display: block;
+  font-family: var(--font-mono);
+  font-size: 0.78rem;
+  color: var(--accent);
+  margin-bottom: 8px;
 }
 
 /* Chips (toolkit) */
@@ -355,7 +404,8 @@ p {
     display: block;
   }
 
-  .project {
+  .project,
+  .project-list-compact .project {
     grid-template-columns: 1fr;
   }
 
